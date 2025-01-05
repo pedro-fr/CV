@@ -1,8 +1,8 @@
-title: Pedro Ferreiro. # Add a space after the period
+title: Pedro Ferreiro  
 description: |
-- "**E-mail:** [pedro.ferreirorega@gmail.com](mailto:pedro.ferreirorega@gmail.com)"
-- **LinkedIn:** "[pedro-ferreirorega](https://www.linkedin.com/in/pedro-ferreirorega)"
-- "**Location:** Santiago de Compostela, Spain"
+  **E-mail:** [pedro.ferreirorega@gmail.com](mailto:pedro.ferreirorega@gmail.com)  
+  **LinkedIn:** [pedro-ferreirorega](https://www.linkedin.com/in/pedro-ferreirorega)  
+  **Location:** Santiago de Compostela, Spain
 theme: jekyll-theme-minimal
 logo: "/images/CV_photo.png"
 
