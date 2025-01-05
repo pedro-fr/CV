@@ -1,16 +1,16 @@
-title: "Pedro's Resume"
+title: Pedro Ferreiro. # Add a space after the period
 description: "An attractive website to showcase my resume"
-
-theme: minima
+theme: jekyll-theme-minimal
+logo: "/images/CV_photo.png"
 
 # Navigation links
 
 # Social links
 social:
   - name: "GitHub"
-    link: "https://github.com/yourusername"
+    link: "https://github.com/pedro-fr"
   - name: "LinkedIn"
-    link: "https://linkedin.com/in/yourusername"
+    link: "https://www.linkedin.com/in/pedro-ferreirorega"
 
 # Custom settings
 author:
