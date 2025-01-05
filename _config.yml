@@ -3,6 +3,7 @@ description: >
   Contact information and links to my social media profiles.
   <br><br>
   <a href="https://www.linkedin.com/in/pedro-ferreirorega/"> <img src="https://img.shields.io/badge/LinkedIn-blue?logo=LinkedIn"> </a> 
+  <a href="mailto:pedro@example.com"> <img src="https://img.shields.io/badge/email-blue"> </a> 
   <br><br>
 theme: jekyll-theme-minimal
 logo: "/images/CV_photo.png"
