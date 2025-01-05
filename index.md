@@ -17,7 +17,7 @@ Gene Regulatory Control in Disease Lab — CiMUS (USC, Spain)
 - Developed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
 - Processed and integrated large-scale omics datasets (public and proprietary). Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
 - Utilized high-performance computing (HPC) resources. Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
-- Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and a scientific poster, showcasing the significance of my work.
+
 ---
 
 ## Main Skills
