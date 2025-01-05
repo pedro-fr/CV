@@ -1,11 +1,4 @@
-# Pedro Ferreiro Rega
-
-- **E-mail:** pedro.ferreirorega@gmail.com
-- **LinkedIn:** [pedro-ferreirorega](https://www.linkedin.com/in/pedro-ferreirorega)
-- **Location:** Santiago de Compostela, Spain
-
-
----
+# Biotechnology gradaute & bioinformatics enthusiast
 
 ## Summary
 
