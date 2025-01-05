@@ -76,4 +76,4 @@ Universidade de Santiago de Compostela (Spain)
 
 - **English:** Full Professional
 - **Spanish:** Native
-- **Portuguese:** Native
+- **Galician-Portuguese:** Native
