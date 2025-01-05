@@ -1,4 +1,4 @@
-# Biotechnology gradaute & bioinformatics enthusiast
+# Biotechnology graduate & bioinformatics enthusiast
 
 ## Summary
 
