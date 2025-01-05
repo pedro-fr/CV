@@ -1,5 +1,5 @@
 title: Pedro Ferreiro. # Add a space after the period
-description: "
+description: |
 - "**E-mail:** [pedro.ferreirorega@gmail.com](mailto:pedro.ferreirorega@gmail.com)"
 - **LinkedIn:** "[pedro-ferreirorega](https://www.linkedin.com/in/pedro-ferreirorega)"
 - "**Location:** Santiago de Compostela, Spain"
@@ -14,13 +14,6 @@ social:
     link: "https://github.com/pedro-fr"
   - name: "LinkedIn"
     link: "https://www.linkedin.com/in/pedro-ferreirorega"
-
-# Custom settings
-author:
-  name: "Pedro Ferreiro"
-  photo: "/images/CV_photo.png"
-  description: "Biotechnology graduate with a keen interest in omics 
-  and computational algorithms applicable to biological data."
 
 # Plugins
 plugins:
