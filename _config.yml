@@ -1,0 +1,25 @@
+title: "Pedro's Resume"
+description: "An attractive website to showcase my resume"
+
+theme: minima
+
+# Navigation links
+
+# Social links
+social:
+  - name: "GitHub"
+    link: "https://github.com/yourusername"
+  - name: "LinkedIn"
+    link: "https://linkedin.com/in/yourusername"
+
+# Custom settings
+author:
+  name: "Pedro Ferreiro"
+  photo: "/images/CV_photo.png"
+  description: "Biotechnology graduate with a keen interest in omics 
+  and computational algorithms applicable to biological data."
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
