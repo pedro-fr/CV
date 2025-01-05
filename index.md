@@ -18,17 +18,6 @@ Gene Regulatory Control in Disease Lab — CiMUS (USC, Spain)
 - Processed and integrated large-scale omics datasets (public and proprietary), ensuring reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
 - Utilized high-performance computing (HPC) resources, managing computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
 - Delivered impactful results that contributed not only to my bachelor’s dissertation but also to both a congress presentation and a scientific poster, showcasing the significance of my work.
-
-**Research Intern — Transcriptomic Analysis of Schwann Cells**  
-Gene Regulatory Control in Disease Lab — CiMUS (USC, Spain)  
-*Oct 2023 – Jul 2024*
-
-- Conducted large-scale transcriptomic analysis of Schwann cells in diabetic neuropathy using R, identifying key regulatory pathways and linking findings to biological insights.
-- Developed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
-- Processed and integrated large-scale omics datasets (public and proprietary), ensuring reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
-- Utilized high-performance computing (HPC) resources, managing computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
-- Delivered impactful results that contributed not only to my bachelor’s dissertation but also to both a congress presentation and a scientific poster, showcasing the significance of my work.
-
 ---
 
 ## Main Skills
@@ -59,9 +48,9 @@ Universidade de Santiago de Compostela (Spain)
 - **R Programming Fundamentals**  
   Stanford Online, 2023
 - **Personalised Precision Medicine**  
-  Fundaci´on Instituto Roche, 2023
+  Fundación Instituto Roche, 2023
 - **Risk Management in Laboratory Work**  
-  Quir´onprevenci´on, 2023
+  Quirónprevención, 2023
 
 ---
 
