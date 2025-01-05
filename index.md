@@ -13,11 +13,11 @@ I am currently pursuing a Master’s Degree in Bioinformatics to further deepen 
 Gene Regulatory Control in Disease Lab — CiMUS (USC, Spain)  
 *Oct 2023 – Jul 2024*
 
-- Conducted large-scale transcriptomic analysis of Schwann cells in diabetic neuropathy using R, identifying key regulatory pathways and linking findings to biological insights.
+- Conducted large-scale transcriptomic analysis of Schwann cells in diabetic neuropathy using R. Identified key regulatory pathways and linked findings to biological insights.
 - Developed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
-- Processed and integrated large-scale omics datasets (public and proprietary), ensuring reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
-- Utilized high-performance computing (HPC) resources, managing computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
-- Delivered impactful results that contributed not only to my bachelor’s dissertation but also to both a congress presentation and a scientific poster, showcasing the significance of my work.
+- Processed and integrated large-scale omics datasets (public and proprietary). Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
+- Utilized high-performance computing (HPC) resources. Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
+- Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and a scientific poster, showcasing the significance of my work.
 ---
 
 ## Main Skills
