@@ -2,21 +2,21 @@
 
 ## Summary
 
-I am a Biotechnology graduate with a keen interest in omics and computational algorithms applicable to biological data. My skills in large-scale omics data analysis, visualization, and quality control (QC) metrics have enabled me to deliver impactful results, including contributions to a congress presentation and a scientific poster during my previous internship. With training and experience in Python, R, and data visualization tools, I am eager to automate workflows, ensuring data reliability, and driving scientific discoveries.
+I am a Biotechnology graduate with a keen interest in omics and computational algorithms applicable to biological data. My skills in large-scale omics data analysis, visualization, and quality control (QC) metrics have enabled me to deliver impactful results, including contributions to a congress communication and a scientific poster during my previous internship. With training and experience in Python, R, and data visualization tools, I am eager to automate workflows, ensuring data reliability, and driving scientific discoveries.
 
-I am currently pursuing a Master’s Degree in Bioinformatics to further deepen my expertise in computational biology. I consider myself a responsible and organized individual, with a strong team-oriented focus and the ability to work effectively both collaboratively and independently.
+I am currently pursuing a Master’s Degree in Bioinformatics to further deepen my expertise in the field. I consider myself a responsible and organized individual with the ability to work effectively both collaboratively and independently.
 
 ---
 
 ## 🔬 Research Experience
 **Research Intern — Transcriptomic Analysis of Schwann Cells**  
-Gene Regulatory Control in Disease Lab — CiMUS (USC, Spain)  
+[Gene Regulatory Control in Disease Lab](https://cimus.usc.gal/group/genecontrol) — CiMUS (USC, Spain)  
 *Oct 2023 – Jul 2024*
 
-- Conducted large-scale transcriptomic analysis of Schwann cells in diabetic neuropathy using R. Identified key regulatory pathways and linked findings to biological insights.
-- Developed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
-- Processed and integrated large-scale public omics datasets. Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
-- Utilized high-performance computing (HPC) resources. Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
+- Conducted transcriptomic analysis of Schwann cells in diabetic neuropathy using R. Identified key regulatory pathways and linked findings to biological insights.
+- Executed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
+- Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
+- Utilized **high-performance computing** (HPC) resource from [CESGA](https://www.cesga.es/en/home-2/). Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
 - Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and a scientific poster, showcasing the significance of my work.
 
 ---
