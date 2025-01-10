@@ -1,9 +1,3 @@
----
-layout: page
-title: Portfolio
-permalink: /pages/portfolio.html
----
-
 # Biotechnology graduate & bioinformatics enthusiast
 
 ## Portfolio
