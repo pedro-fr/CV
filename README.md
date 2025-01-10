@@ -29,3 +29,7 @@ This project is licensed under the MIT License.
 For any inquiries, please reach out to me at [your-email@example.com](mailto:your-email@example.com).
 
 Thank you for visiting!
+
+## References
+
+[1] Jekyll theme "Minimal" for GitHub Pages: https://github.com/pages-themes/minimal (CC0 1.0 Universal License)
