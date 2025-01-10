@@ -8,5 +8,4 @@ Here's an overview of some of the projects I've done so far in my journey in bio
 
 ### Shell scripting
 
-[Multifasta split](https://github.com/pedro-fr/multi-fasta-split) 
-![Multifasta split]({{ "/images/multi-fasta-split.png" | relative_url }})
+[![Multifasta split]({{ "/images/multi-fasta-split.png" | relative_url }})](https://github.com/pedro-fr/multi-fasta-split)
