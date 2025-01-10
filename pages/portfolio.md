@@ -8,5 +8,5 @@ Here's an overview of some projects I made so far in my journey in bioinformatic
 
 ### Shell scripting
 
-[Multifasta split](https://github.com/pedro-fr/multi-fasta-split)
-<img src="/images/multi-fasta-split.png"/>
+[Multifasta split](https://github.com/pedro-fr/multi-fasta-split) 
+![Multifasta split](/images/multi-fasta-split.png)
