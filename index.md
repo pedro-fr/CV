@@ -17,7 +17,7 @@ I am currently pursuing a Master’s Degree in Bioinformatics to further deepen 
 - Executed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
 - Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
 - Utilized **high-performance computing** (HPC) resource from [CESGA](https://www.cesga.es/en/home-2/). Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
-- Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and a scientific poster, showcasing the significance of my work.
+- Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and two scientific posters, showcasing the significance of my work.
 
 ---
 
@@ -44,6 +44,9 @@ Universidade de Santiago de Compostela (Spain)
 
 ## Additional Education
 
+ 
+ - **Advanced Data Visualizations in R**  
+  Statistical Society of Canada, 2025
 - **Machine Learning and Big Data for Bioinformatics**  
   Abierta UGR, 2024
 - **R Programming Fundamentals**  
@@ -57,6 +60,6 @@ Universidade de Santiago de Compostela (Spain)
 
 ## Language Skills
 
-- **English:** Full Professional
+- **English:** Full Professional (C2 Cambridge Grade A)
 - **Spanish:** Native
 - **Galician-Portuguese:** Native
