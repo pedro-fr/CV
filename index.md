@@ -16,7 +16,7 @@ I am currently pursuing a Master’s Degree in Bioinformatics to further deepen 
 - Conducted transcriptomic analysis of Schwann cells in diabetic neuropathy using R. Identified key regulatory pathways and linked findings to biological insights.
 - Executed pipelines for quality control (QC), statistical analysis, and data visualization using tools such as FastQC, RMarkdown, and ggplot2.
 - Ensured reproducibility and reliability in data analysis with proper documentation to maintain consistent and reliable data across research projects.
-- Utilized **high-performance computing** (HPC) resource from [CESGA](https://www.cesga.es/en/home-2/). Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
+- Utilized **high-performance computing** (HPC) resources from [CESGA](https://www.cesga.es/en/home-2/). Managed computational workflows efficiently with the Slurm workload manager in a Unix-like environment.
 - Delivered impactful results that contributed to my bachelor’s dissertation, a congress presentation, and two scientific posters, showcasing the significance of my work.
 
 ---
