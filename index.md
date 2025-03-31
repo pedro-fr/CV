@@ -21,20 +21,21 @@ I am currently pursuing a Master’s Degree in Bioinformatics to further deepen 
 
 ---
 
-## Main Skills
+## Publications
+### Scientific Communications
 
-- **Programming:** Shell Scripting, R, Python
-- **Data Visualization:** ggplot2, R Markdown
-- **Tools:** LaTeX, MS Office, GitHub Copilot
-- **Soft Skills:** Collaboration, Communication
+**Pedro Ferreiro Rega**, Cristina Riobello Suárez, Eva María Esquinas Román, Ashwin Woodhoo. *Análisis transcriptómico de las células de Schwann en la neuropatía diabética*. 2º Simposio de Estudiantes Hispanohablantes de Bioinformática y Biología Computacional, Virtual, 2025. 
+
+Cristina Riobello Suárez, Paula Ayuso García, Sergio Velasco Avilés, Jorge Cañas Martín, **Pedro
+Ferreiro Rega**, Eva María Esquinas Román, Luis Pedro Íñiguez, Manuel Irimia, Juan Valcárcel,
+Marta Varela Rey, Ashwin Woodhoo. *Alternative splicing as a gene control mechanism in Schwann cell functions*. [1<sup>er</sup>  Congreso de la Sociedad Española de Bioinformática y Biología Computacional], Valencia, 2024. 
 
 ---
-
 ## Education
 
-**Master’s Degree in Bioinformatics (MSc)**  
+**Master's Degree in Bioinformatics (MSc)**  
 Valencian International University (Spain)  
-*2024 – 2025*
+*2024 – 2025 (expected)*
 
 **Bachelor’s Degree in Biotechnology**  
 Universidade de Santiago de Compostela (Spain)  
@@ -55,6 +56,14 @@ Universidade de Santiago de Compostela (Spain)
   Fundación Instituto Roche, 2023
 - **Risk Management in Laboratory Work**  
   Quirónprevención, 2023
+
+---
+## Main Skills
+
+- **Programming:** Shell Scripting, R, Python
+- **Data Visualization:** ggplot2, R Markdown
+- **Tools:** LaTeX, MS Office, GitHub Copilot
+- **Soft Skills:** Collaboration, Communication
 
 ---
 
