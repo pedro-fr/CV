@@ -1,0 +1,136 @@
+/* Modern Adaptive Theme with Blue Palette */
+:root {
+  --primary-blue: #2563eb;
+  --primary-blue-dark: #1e40af;
+  --accent-blue: #60a5fa;
+  --background-light: #f8fafc;
+  --background-dark: #1e293b;
+  --text-light: #1e293b;
+  --text-dark: #f1f5f9;
+  --card-bg-light: #fff;
+  --card-bg-dark: #334155;
+  --border-radius: 12px;
+  --transition: 0.3s;
+  --shadow: 0 2px 8px rgba(30,64,175,0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-light: var(--background-dark);
+    --text-light: var(--text-dark);
+    --card-bg-light: var(--card-bg-dark);
+  }
+}
+
+body {
+  background: var(--background-light);
+  color: var(--text-light);
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background var(--transition), color var(--transition);
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: var(--card-bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+  transition: background var(--transition);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+}
+
+header img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--primary-blue);
+  margin: 1rem 0 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.12);
+}
+
+header p {
+  color: var(--primary-blue-dark);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  transition: background var(--transition), color var(--transition);
+}
+
+nav ul li a:hover {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  color: var(--primary-blue-dark);
+  margin-top: 2rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--accent-blue);
+  margin: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  color: var(--primary-blue-dark);
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Cards for experience, education, etc. */
+.card {
+  background: var(--card-bg-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: background var(--transition);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 1rem 0.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+} 
