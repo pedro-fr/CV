@@ -1,5 +1,5 @@
 <!-- Profile Card -->
-<div class="card" style="text-align:center; margin-bottom:2rem;">
+<div class="card" id="profile" style="text-align:center; margin-bottom:2rem;">
   <img src="/images/CV_photo.png" alt="Pedro Ferreiro photo" style="width:110px;height:110px;border-radius:50%;border:4px solid var(--primary-blue);margin-bottom:1rem;object-fit:cover;box-shadow:0 2px 8px rgba(37,99,235,0.12);">
   <h1 style="margin-bottom:0.2rem;">Pedro Ferreiro</h1>
   <p style="color:var(--primary-blue-dark);font-size:1.1rem;">Biotechnology graduate & bioinformatics enthusiast</p>
@@ -11,7 +11,7 @@
 </div>
 
 <!-- Summary Card -->
-<div class="card">
+<div class="card" id="summary">
 <h2>📝 Summary</h2>
 I am a Biotechnology graduate with a keen interest in omics and computational algorithms applicable to biological data. My skills in large-scale omics data analysis, visualization, and quality control (QC) metrics have enabled me to deliver impactful results, including contributions to a congress communication and a scientific poster during my previous internship. With training and experience in Python, R, and data visualization tools, I am eager to automate workflows, ensuring data reliability, and driving scientific discoveries.
 
@@ -19,7 +19,7 @@ I am currently pursuing a Master's Degree in Bioinformatics to further deepen my
 </div>
 
 <!-- Research Experience Card -->
-<div class="card">
+<div class="card" id="research">
 <h2>🔬 Research Experience</h2>
 <strong>Research Intern — Transcriptomic Analysis of Schwann Cells</strong><br>
 <a href="https://cimus.usc.gal/group/genecontrol" target="_blank">Gene Regulatory Control in Disease Lab</a> — CiMUS (USC, Spain)<br>
@@ -34,7 +34,7 @@ I am currently pursuing a Master's Degree in Bioinformatics to further deepen my
 </div>
 
 <!-- Publications Card -->
-<div class="card">
+<div class="card" id="publications">
 <h2>📚 Publications</h2>
 <h3>Scientific Communications</h3>
 <strong>Pedro Ferreiro Rega</strong>, Cristina Riobello Suárez, Eva María Esquinas Román, Ashwin Woodhoo. <em>Análisis transcriptómico de las células de Schwann en la neuropatía diabética</em>. 2º Simposio de Estudiantes Hispanohablantes de Bioinformática y Biología Computacional, Virtual, 2025.<br><br>
@@ -42,7 +42,7 @@ Cristina Riobello Suárez, Paula Ayuso García, Sergio Velasco Avilés, Jorge Ca
 </div>
 
 <!-- Education Card -->
-<div class="card">
+<div class="card" id="education">
 <h2>🎓 Education</h2>
 <strong>Master's Degree in Bioinformatics (MSc)</strong><br>
 Valencian International University (Spain)<br>
@@ -53,8 +53,8 @@ Universidade de Santiago de Compostela (Spain)<br>
 </div>
 
 <!-- Additional Education Card -->
-<div class="card">
-<h2>📖 Additional Education</h2>
+<div class="card" id="skills">
+<h2>📖 Additional Education & 💡 Main Skills</h2>
 <ul>
   <li><strong>Advanced Data Visualizations in R</strong> — Statistical Society of Canada, 2025</li>
   <li><strong>Machine Learning and Big Data for Bioinformatics</strong> — Abierta UGR, 2024</li>
@@ -62,11 +62,6 @@ Universidade de Santiago de Compostela (Spain)<br>
   <li><strong>Personalised Precision Medicine</strong> — Fundación Instituto Roche, 2023</li>
   <li><strong>Risk Management in Laboratory Work</strong> — Quirónprevención, 2023</li>
 </ul>
-</div>
-
-<!-- Main Skills Card -->
-<div class="card">
-<h2>💡 Main Skills</h2>
 <ul>
   <li><strong>Programming:</strong> Shell Scripting, R, Python</li>
   <li><strong>Data Visualization:</strong> ggplot2, R Markdown</li>
@@ -76,7 +71,7 @@ Universidade de Santiago de Compostela (Spain)<br>
 </div>
 
 <!-- Language Skills Card -->
-<div class="card">
+<div class="card" id="languages">
 <h2>🌍 Language Skills</h2>
 <ul>
   <li><strong>English:</strong> Full Professional (C2 Cambridge Grade A)</li>
@@ -86,7 +81,7 @@ Universidade de Santiago de Compostela (Spain)<br>
 </div>
 
 <!-- Portfolio Card -->
-<div class="card">
+<div class="card" id="portfolio">
 <h2>🗂️ Portfolio</h2>
 <p>Here's an overview of some of the projects I've done so far in my journey in bioinformatics. More projects will be added soon!</p>
 <div style="display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;">
