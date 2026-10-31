@@ -23,11 +23,9 @@ document.addEventListener('keydown', e => {
 document.addEventListener('click', e => {
  if(navigation.classList.contains('open') && !e.target.closest('.header-right'))menu.click();
 });
-const systemTheme = matchMedia('(prefers-color-scheme: dark)');
-const currentTheme = () => document.documentElement.dataset.theme || (systemTheme.matches ? 'dark' : 'light');
+const currentTheme = () => document.documentElement.dataset.theme || 'light';
 function labelTheme(){theme.setAttribute('aria-label',`Switch to ${currentTheme()==='dark'?'light':'dark'} theme`);}
 labelTheme();
-systemTheme.addEventListener('change', labelTheme);
 theme.addEventListener('click', () => {
  const next = currentTheme()==='dark'?'light':'dark';
  document.documentElement.dataset.theme=next;

@@ -33,7 +33,7 @@ The original CV text is retained at `docs/original-content.md` for comparison.
 
 - About, Research, Publications and CV.
 - Responsive navigation; all content works without JavaScript.
-- System color preference plus persistent light/dark toggle.
+- Light theme by default, with a persistent light/dark toggle.
 - Local full-site search via the search button or Ctrl/⌘ K. Escape closes it.
 - Communications filtered by year.
 - CV with print styling: **Print / save as PDF** opens the browser's print dialog. No pre-generated PDF is claimed.
