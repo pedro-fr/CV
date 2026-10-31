@@ -1,0 +1,11 @@
+{
+  "name": "pedro-ferreiro-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "dev": "python3 -m http.server 4321 --bind 127.0.0.1"
+  },
+  "engines": { "node": ">=18" }
+}
