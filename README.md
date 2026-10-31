@@ -86,6 +86,7 @@ Las rutas antiguas `/pages/portfolio`, `/pages/portfolio/` y `/pages/portfolio.h
 - Sin analítica, servicios de búsqueda externos ni fuentes remotas.
 - Hosting: GitHub Pages. Generación: [Astro](https://github.com/withastro/astro), con aviso MIT en `public/assets/licenses/astro.txt`.
 - Iconos: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, MIT. Los trazados están en `src/data/feather.json` y la licencia completa en `public/assets/licenses/feather.txt`, enlazada en el pie.
-- La célula, la bombilla, la insignia de identificador y la composición del esquema son SVG/CSS propios.
+- LinkedIn: SVG de Material Design Icons / Pictogrammers. ORCID: SVG de Simple Icons (CC0). Las marcas conservan los derechos de sus titulares; procedencia y avisos en `public/assets/licenses/brand-icons.txt`, enlazado en el pie. Los trazados se guardan en `src/data/brand-icons.json`.
+- La célula, la bombilla y la composición del esquema son SVG/CSS propios.
 - Retrato, imagen del proyecto y contenido biográfico conservados del repositorio original. Tipografía del sistema.
 - Diseño propio, sin tema prediseñado.
