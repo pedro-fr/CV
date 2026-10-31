@@ -225,18 +225,15 @@ button.research-node{border:0;background:none;padding:0;font:inherit;font-size:1
 .research-connector{position:relative}
 .research-connector:after{content:"";position:absolute;top:calc(50% - 2px);left:0;width:4px;height:4px;background:var(--accent);border-radius:50%;opacity:0;pointer-events:none}
 .research-caption{min-height:1.8em;font-size:13px;line-height:1.8;color:var(--muted);margin:18px 10px 4px}
-.motion-toggle{color:var(--muted);font-size:11px;background:none;border:0;border-bottom:1px dotted var(--border);padding:1px 0;line-height:1.8}
-.motion-toggle:hover{color:var(--accent);border-color:var(--accent)}
 .is-animated .node-icon{animation:research-pulse 7.2s ease-in-out infinite}
 .is-animated .research-node:nth-child(3) .node-icon{animation-delay:2.4s}
 .is-animated .research-node:nth-child(5) .node-icon{animation-delay:4.8s}
 .is-animated .research-connector:after{animation:research-flow 7.2s ease-in-out infinite;animation-delay:.9s}
 .is-animated .research-connector:nth-child(4):after{animation-delay:3.3s}
-.research-visual.is-paused .node-icon,.research-visual.is-paused .research-connector:after{animation-play-state:paused}
 @keyframes research-pulse{0%,28%,100%{box-shadow:0 0 0 0 transparent}8%,18%{background:var(--accent-soft);box-shadow:0 0 0 5px var(--accent-soft)}}
 @keyframes research-flow{0%,4%{left:0;opacity:0}6%{opacity:.85}24%{left:calc(100% - 4px);opacity:.85}26%,100%{left:calc(100% - 4px);opacity:0}}
 @media(max-width:600px){button.research-node{font-size:12px}.research-caption{font-size:12px;margin-top:16px;min-height:3.6em}}
-@media(prefers-reduced-motion:reduce){.research-visual .node-icon,.research-visual .research-connector:after{animation:none!important}.research-connector:after{display:none}.motion-toggle{display:none}}
+@media(prefers-reduced-motion:reduce){.research-visual .node-icon,.research-visual .research-connector:after{animation:none!important}.research-connector:after{display:none}}
 
 .innovation-feature{display:block;padding:22px 24px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:9px;background:var(--surface)}
 .innovation-feature:hover{border-color:var(--accent)}
@@ -249,3 +246,7 @@ button.research-node{border:0;background:none;padding:0;font:inherit;font-size:1
 .case-heading .lead{max-width:680px}
 @media(max-width:720px){.menu-toggle:not([hidden]){display:inline-flex}.site-header{flex-wrap:wrap}.header-right{gap:4px}nav{display:flex;flex-wrap:wrap;gap:6px 19px;justify-content:center;width:100%;padding:12px 0 18px}nav a{font-size:15px}body.js nav{display:none;position:absolute;top:67px;left:0;background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:18px;box-shadow:0 12px 20px #0001}body.js nav.open{display:flex}body:not(.js) .header-right{width:100%}}
 @media(max-width:600px){.innovation-feature{padding:20px}.case-heading h2{font-size:25px}}
+
+.research-node[data-research-stage=understanding] .bulb-glass{fill:var(--accent-soft);transition:fill .3s}
+.research-node[data-research-stage=understanding][aria-pressed=true] .bulb-glass{fill:#f8d978;stroke:#8b6b16}
+.research-node[data-research-stage=understanding][aria-pressed=true] .node-icon{color:#8b6b16;background:#fff8dc;border-color:#c8a142;box-shadow:0 0 12px #e8bf5426}

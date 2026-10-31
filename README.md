@@ -35,7 +35,7 @@ The original CV text is retained at `docs/original-content.md` for comparison.
 - About, Research, Innovation, Publications and CV.
 - OneHealth DataSpace is highlighted in About and has a dedicated Innovation page. Its project context links to the official website; personal responsibilities and results are not assumed.
 - Responsive navigation; all content works without JavaScript.
-- Research visualization with subtle motion, selectable stages and a pause control. Reduced-motion preferences disable the animation.
+- Research visualization with subtle motion, selectable stages and captions synchronized to the active node. Reduced-motion preferences disable the animation.
 - Light theme by default, with a persistent light/dark toggle.
 - Local full-site search via the search button or Ctrl/⌘ K. Escape closes it.
 - Communications filtered by year.
@@ -56,7 +56,7 @@ The validation script checks local links/assets and anchors under `/CV/`, page m
 
 - Hosting: GitHub Pages.
 - Interface and diagram icons: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, under the MIT license. The official SVG paths are stored locally in `assets/icons/feather.json`; the full license is distributed in `assets/licenses/feather.txt` and linked from every page footer. Stroke width and rendered size are adapted to the site.
-- The biology cell icon and the three-node composition are custom SVG/CSS.
+- The biology cell and illuminated lightbulb icons, and the three-node composition, are custom SVG/CSS.
 - The portrait, project preview and biographical content are retained from this repository.
 - Fonts use the visitor’s system font stack; no font files or third-party webfont services are bundled.
 - The site uses custom HTML, CSS and JavaScript with no theme or runtime packages.
