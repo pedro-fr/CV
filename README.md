@@ -17,7 +17,7 @@ Abre **http://127.0.0.1:4321/CV/**. Al guardar un archivo, la vista previa se ac
 
 | Quiero cambiar… | Archivo |
 | --- | --- |
-| El título «Biology meets computation.» o la introducción de Research | `content/pages/research.json` → `heading` o `description` |
+| El título «Bioinformatics.» o la introducción de Research | `content/pages/research.json` → `heading` o `description` |
 | Los encabezados y textos de otra página | `content/pages/home.json`, `innovation.json`, `publications.json` o `cv.json` |
 | Biografía, experiencia, formación, publicaciones, proyectos o enlaces personales | `content/profile.json` |
 | Etiquetas y explicaciones del esquema animado | `content/research-approach.json` |
@@ -30,7 +30,7 @@ Abre **http://127.0.0.1:4321/CV/**. Al guardar un archivo, la vista previa se ac
 Por ejemplo, para cambiar el encabezado de Research, basta con editar:
 
 ```json
-"heading": "Biology meets computation."
+"heading": "Bioinformatics."
 ```
 
 No tienes que editar HTML generado ni ejecutar una generación después de cada cambio durante el desarrollo. Los JSON contienen texto plano; Astro lo escapa al mostrarlo. Mantén las claves y la sintaxis JSON, y cambia los valores.
