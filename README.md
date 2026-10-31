@@ -33,7 +33,8 @@ The original CV text is retained at `docs/original-content.md` for comparison.
 ## Structure and behavior
 
 - About, Research, Innovation, Publications and CV.
-- OneHealth DataSpace is highlighted in About and has a dedicated Innovation page. Its project context links to the official website; personal responsibilities and results are not assumed.
+- The homepage contains the profile, About and Focus areas. Research, Innovation, Publications and CV are reached through the main navigation.
+- OneHealth DataSpace has a dedicated Innovation page. Its project context links to the official website; personal responsibilities and results are not assumed.
 - Responsive navigation; all content works without JavaScript.
 - Research visualization with subtle motion, selectable stages and captions synchronized to the active node. Reduced-motion preferences disable the animation.
 - Light theme by default, with a persistent light/dark toggle.
