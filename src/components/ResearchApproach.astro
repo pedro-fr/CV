@@ -1,0 +1,16 @@
+---
+import stages from '../../content/research-approach.json';
+import Icon from './Icon.astro';
+---
+<div class="research-visual">
+  <div class="research-path" role="group" aria-label="Explore my research approach">
+    {stages.map((stage, index) => <>
+      {index > 0 && <span class="research-connector" aria-hidden="true"><Icon name="arrow" /></span>}
+      <button class="research-node" type="button" data-research-stage={stage.id} data-caption={stage.description} aria-pressed={index === 0 ? 'true' : 'false'} disabled>
+        <span class="node-icon"><Icon name={stage.id} /></span>
+        <span>{stage.label}</span>
+      </button>
+    </>)}
+  </div>
+  <p class="research-caption" id="research-caption" aria-live="off">{stages[0].description}</p>
+</div>

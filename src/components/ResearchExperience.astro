@@ -1,0 +1,11 @@
+---
+import profile from '../../content/profile.json';
+const experience = profile.research;
+---
+<article class="research-record">
+  <div class="record-meta"><span>{experience.dates}</span><span>{experience.role}</span></div>
+  <h3>{experience.title}</h3>
+  <p><a href={experience.url}>{experience.lab} ↗</a><br /><span class="muted">{experience.institution}</span></p>
+  <p>{experience.summary}</p>
+  <ul class="detail-list">{experience.details.map(detail => <li>{detail}</li>)}</ul>
+</article>

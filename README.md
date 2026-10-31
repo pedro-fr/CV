@@ -1,63 +1,91 @@
-# Pedro Ferreiro Rega · personal website
+# Pedro Ferreiro Rega · web personal
 
-A personal academic website for GitHub Pages, with a custom minimal layout for research, scientific communications and professional background.
+Web académica estática construida con **Astro** y un diseño propio. Conserva las páginas About, Research, Innovation, Publications y CV, el modo claro por defecto y el esquema animado de la portada.
 
-## Run locally
+## Empezar
 
-Requires Node.js 18+ and Python 3. No npm packages or installation needed.
+Necesitas **Node.js 24 LTS** y npm. La versión está indicada en `.nvmrc`; si utilizas nvm, ejecuta `nvm install` y `nvm use` en esta carpeta.
 
 ```sh
-npm run build
-npm run check
+npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:4321. To test the project subpath exactly, serve the parent directory and open `/CV/`.
+Abre **http://127.0.0.1:4321/CV/**. Al guardar un archivo, la vista previa se actualiza automáticamente. El prefijo `/CV/` coincide con GitHub Pages.
 
-## Update content
+## Qué archivo editar
 
-Edit `content/profile.json`, then run `npm run build` and `npm run check`. Commit the content **and generated HTML/search files** together. `scripts/build.mjs` generates the pages directly in the repository root. Do not edit generated HTML by hand.
+| Quiero cambiar… | Archivo |
+| --- | --- |
+| El título «Biology meets computation.» o la introducción de Research | `content/pages/research.json` → `heading` o `description` |
+| Los encabezados y textos de otra página | `content/pages/home.json`, `innovation.json`, `publications.json` o `cv.json` |
+| Biografía, experiencia, formación, publicaciones, proyectos o enlaces personales | `content/profile.json` |
+| Etiquetas y explicaciones del esquema animado | `content/research-approach.json` |
+| El contenido o la distribución de una página | `src/pages/index.astro`, `research.astro`, `innovation.astro`, `publications.astro` o `cv.astro` |
+| Cabecera o navegación | `src/components/Header.astro` y `src/data/navigation.ts` |
+| Pie de página y créditos | `src/components/Footer.astro` |
+| Colores, tamaños, espacios y distribución móvil | `src/styles/global.css` |
+| Movimiento del esquema o sincronización de sus textos | `src/scripts/research-approach.js` |
 
-- `about`, `interests`: introduction and focus areas.
-- `research`, `projects`: research experience and portfolio.
-- `innovation`: OneHealth DataSpace project, confirmed involvement, context and public resources. The optional `contribution`, `work` and `outcomes` fields stay hidden until real content is added.
-- `publications`: scientific communications; year filters are generated from the data.
-- `education`, `courses`, `skills`, `languages`: printable CV.
-- `url`: production origin and project path, currently `https://pedro-fr.github.io/CV`.
-- `email`, `github`, `linkedin`, `orcid`: shared contact links.
+Por ejemplo, para cambiar el encabezado de Research, basta con editar:
 
-Existing content was migrated from the original CV. Degree dates and status are preserved as originally written, including the expected MSc completion in 2025; confirm these when updating content. Communications are not presented as peer-reviewed articles, and there are no invented DOI or download links. The contact email comes from the original README.
+```json
+"heading": "Biology meets computation."
+```
 
-The original CV text is retained at `docs/original-content.md` for comparison.
+No tienes que editar HTML generado ni ejecutar una generación después de cada cambio durante el desarrollo. Los JSON contienen texto plano; Astro lo escapa al mostrarlo. Mantén las claves y la sintaxis JSON, y cambia los valores.
 
-## Structure and behavior
+## Organización
 
-- About, Research, Innovation, Publications and CV.
-- The homepage contains the profile, About and Focus areas. Research, Innovation, Publications and CV are reached through the main navigation.
-- OneHealth DataSpace has a dedicated Innovation page. Its project context links to the official website; personal responsibilities and results are not assumed.
-- Responsive navigation; all content works without JavaScript.
-- Research visualization with subtle motion, selectable stages and captions synchronized to the active node. Reduced-motion preferences disable the animation.
-- Light theme by default, with a persistent light/dark toggle.
-- Local full-site search via the search button or Ctrl/⌘ K. Escape closes it.
-- Communications filtered by year.
-- CV with print styling: **Print / save as PDF** opens the browser's print dialog. No pre-generated PDF is claimed.
-- Skip link, visible keyboard focus, reduced-motion support, local assets, no analytics or third-party runtime requests.
-- Canonicals, social metadata, favicon, sitemap, robots file and custom 404.
-- Legacy `/pages/portfolio`, `/pages/portfolio/` and `/pages/portfolio.html` lead to Research.
+- `content/`: datos y textos editables, separados del diseño.
+- `src/pages/`: una página Astro por sección y los endpoints de búsqueda, sitemap y robots.
+- `src/components/`: piezas compartidas como cabecera, pie, publicaciones, experiencia y esquema animado.
+- `src/layouts/BaseLayout.astro`: estructura común, metadatos y carga de estilos/scripts.
+- `src/scripts/`: módulos pequeños para búsqueda, temas, menú, filtros, CV y animación.
+- `public/`: imágenes, favicon, licencias y redirecciones antiguas. Se copian a la web sin procesamiento.
+- `dist/`: web generada para publicar. Está ignorada por Git y no se edita.
+
+La portada termina tras Focus areas. Los detalles de cada sección están en sus propias páginas. Innovation admite `contribution`, `work` y `outcomes`; los apartados vacíos no se muestran. No se han supuesto responsabilidades ni resultados personales.
+
+Se han conservado las fechas y el estado originales de la formación, incluido el máster con finalización prevista en 2025; deben revisarse en la fase de contenido. El texto original se conserva en `docs/original-content.md`.
+
+## Comprobar y preparar una publicación
+
+```sh
+npm run validate
+npm run preview
+```
+
+`validate` comprueba los componentes, genera `dist/` y revisa enlaces, recursos, metadatos, búsqueda, contenido del CV y redirecciones antiguas. `preview` permite revisar la versión de producción en `/CV/`.
+
+Para ejecutar los pasos por separado:
+
+```sh
+npm run check
+npm run build
+npm run test
+```
+
+El CV usa el diálogo de impresión del navegador para guardar un PDF. Su maquetación final en impresión debe revisarse visualmente antes de dar por definitivo el documento.
 
 ## GitHub Pages
 
-This is a static site. The `.nojekyll` file disables Jekyll so the committed HTML is served directly. In repository Settings → Pages, keep **Deploy from a branch**, with your published branch and **/ (root)**. No theme, Ruby, dependencies, secrets or custom build action are needed. The new design becomes live once these files are merged into the configured published branch.
+El workflow `.github/workflows/deploy.yml` valida cada pull request y publica automáticamente **solo los cambios integrados en `main`**. No necesitas generar ni subir los HTML a Git.
 
-Relative navigation and assets work at both `/CV/` and the domain root. For a custom domain, change `url`, regenerate and configure the domain in GitHub Pages.
+Al adoptar esta versión, selecciona una vez **Settings → Pages → Source → GitHub Actions**. La PR no se fusiona ni la web pública se sustituye como parte de la migración.
 
-The validation script checks local links/assets and anchors under `/CV/`, page metadata, active navigation, search coverage and migration of CV entries. Browser verification should also cover search, filtering, mobile navigation, both themes and print preview.
+La URL de producción está en `content/profile.json` → `url`. `astro.config.mjs` deriva de ella el dominio y el prefijo `/CV/`; todos los enlaces internos e imágenes usan un único helper. Para un dominio propio, actualiza `url` y configura el dominio en GitHub Pages. `SITE_BASE_PATH=/` permite verificar una compilación en la raíz de un dominio.
 
-## Credits and third-party notices
+Las rutas antiguas `/pages/portfolio`, `/pages/portfolio/` y `/pages/portfolio.html` siguen llevando a Research.
 
-- Hosting: GitHub Pages.
-- Interface and diagram icons: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, under the MIT license. The official SVG paths are stored locally in `assets/icons/feather.json`; the full license is distributed in `assets/licenses/feather.txt` and linked from every page footer. Stroke width and rendered size are adapted to the site.
-- The biology cell and illuminated lightbulb icons, the identifier badge, and the three-node composition are custom SVG/CSS.
-- The portrait, project preview and biographical content are retained from this repository.
-- Fonts use the visitor’s system font stack; no font files or third-party webfont services are bundled.
-- The site uses custom HTML, CSS and JavaScript with no theme or runtime packages.
+## Funcionalidades y créditos
+
+- Menú móvil, búsqueda local con Ctrl/⌘ K, filtros por año y selector de tema persistente.
+- Animación CSS con textos sincronizados y bombilla de Understanding. Respeta la preferencia de movimiento reducido.
+- Contenido legible sin JavaScript, enlace para saltar al contenido y foco de teclado visible.
+- Sin analítica, servicios de búsqueda externos ni fuentes remotas.
+- Hosting: GitHub Pages. Generación: [Astro](https://github.com/withastro/astro), con aviso MIT en `public/assets/licenses/astro.txt`.
+- Iconos: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, MIT. Los trazados están en `src/data/feather.json` y la licencia completa en `public/assets/licenses/feather.txt`, enlazada en el pie.
+- La célula, la bombilla, la insignia de identificador y la composición del esquema son SVG/CSS propios.
+- Retrato, imagen del proyecto y contenido biográfico conservados del repositorio original. Tipografía del sistema.
+- Diseño propio, sin tema prediseñado.

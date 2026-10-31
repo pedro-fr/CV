@@ -3,9 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs",
-    "dev": "python3 -m http.server 4321 --bind 127.0.0.1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "validate": "npm run check && npm run build && npm run test",
+    "test": "node scripts/check.mjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "astro": "7.4.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "typescript": "6.0.3"
+  }
 }

@@ -1,0 +1,21 @@
+---
+import profile from '../../content/profile.json';
+import { url } from '../utils/urls';
+import Icon from './Icon.astro';
+---
+<footer class="site-footer">
+  <div class="footer-meta">
+    <p>© {new Date().getUTCFullYear()} {profile.name}</p>
+    <p class="footer-credits">
+      <span>Hosted on <a href="https://pages.github.com/">GitHub Pages</a></span>
+      <span aria-hidden="true">·</span>
+      <span>Built with <a href="https://github.com/withastro/astro">Astro</a></span>
+      <span aria-hidden="true">·</span>
+      <span>Icons: <a href="https://feathericons.com/">Feather</a> (<a href={url('assets/licenses/feather.txt')}>MIT</a>)</span>
+    </p>
+  </div>
+  <div class="footer-links">
+    <a href={profile.github}>GitHub <Icon name="external" /></a>
+    <a href={`mailto:${profile.email}`}>Email <Icon name="external" /></a>
+  </div>
+</footer>

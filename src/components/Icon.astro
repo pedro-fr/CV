@@ -1,0 +1,14 @@
+---
+import feather from '../data/feather.json';
+interface Props { name: string; size?: number }
+const { name, size = 20 } = Astro.props;
+// Feather paths are distributed with their MIT notice in public/assets/licenses/feather.txt.
+const custom: Record<string, string> = {
+  orcid: '<circle cx="12" cy="12" r="9.5"/><text x="5.4" y="16.3" font-family="Arial,sans-serif" font-size="11" font-weight="600" letter-spacing="-.8" fill="currentColor" stroke="none">iD</text>',
+  understanding: '<path class="bulb-glass" d="M9 16c0-1.5-3-3-3-6a6 6 0 0 1 12 0c0 3-3 4.5-3 6Z"/><path d="M9 19h6m-5 3h4m-2-6v-5m-2-1 2 1 2-1M12 1V0M4 4 2.5 2.5M20 4l1.5-1.5M3 10H1m20 0h2"/>',
+  biology: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.5"/><path d="m7 8 1 1m8 6 1 1m-9 0 1-1"/>',
+};
+const path = custom[name] ?? feather[name as keyof typeof feather];
+if (!path) throw new Error(`Unknown icon: ${name}`);
+---
+<svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" set:html={path} />

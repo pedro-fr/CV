@@ -1,0 +1,5 @@
+[
+  { "id": "biology", "label": "Biology", "description": "Biological questions, explored through omics." },
+  { "id": "data", "label": "Data", "description": "Reproducible analysis with R, Python and HPC." },
+  { "id": "understanding", "label": "Understanding", "description": "Connecting computational results with biological insights." }
+]

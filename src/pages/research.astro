@@ -1,0 +1,32 @@
+---
+import profile from '../../content/profile.json';
+// Edit this JSON file to change the title, introduction and section labels.
+import copy from '../../content/pages/research.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import ResearchExperience from '../components/ResearchExperience.astro';
+import FocusAreas from '../components/FocusAreas.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../utils/urls';
+---
+<BaseLayout title={copy.title} description={copy.description} currentPage="research">
+  <PageHeading {...copy} />
+  <Section title={copy.sections.experience}><ResearchExperience /></Section>
+  <Section title={copy.sections.interests}><FocusAreas /></Section>
+  <Section title={copy.sections.projects}>
+    {profile.projects.map(project => (
+      <a class="project" href={project.url}>
+        <div class="project-image">
+          <img src={url(project.image)} alt="Multi-FASTA split project preview" loading="lazy" width="700" height="350" />
+        </div>
+        <div class="project-body">
+          <p class="eyebrow">{project.category}</p>
+          <h3>{project.title} <Icon name="external" /></h3>
+          <p>{project.description}</p>
+          <span class="text-link">{copy.projectLink} <Icon name="arrow" /></span>
+        </div>
+      </a>
+    ))}
+  </Section>
+</BaseLayout>

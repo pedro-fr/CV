@@ -1,0 +1,8 @@
+{
+  "title": "Research",
+  "eyebrow": "Research & projects",
+  "heading": "Biology meets computation.",
+  "description": "Omics analysis, reproducible workflows and tools for working with biological data.",
+  "sections": { "experience": "Experience", "interests": "Interests", "projects": "Projects" },
+  "projectLink": "View on GitHub"
+}
