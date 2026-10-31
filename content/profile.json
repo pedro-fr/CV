@@ -128,5 +128,21 @@
       "title": "Galician-Portuguese",
       "items": "Native"
     }
-  ]
+  ],
+  "innovation": {
+    "title": "OneHealth DataSpace",
+    "organization": "CESGA · Galicia Supercomputing Center",
+    "url": "https://dataspace.cesga.es/en",
+    "involvement": "I have been working on OneHealth DataSpace at CESGA for more than a year.",
+    "context": "OneHealth DataSpace is a CESGA project connecting data sharing with analytics, high-performance computing and services for publishing results. It provides a common environment for organizations to collaborate while retaining control over their data.",
+    "contribution": "",
+    "work": [],
+    "outcomes": [],
+    "resources": [
+      {
+        "label": "Official project website",
+        "url": "https://dataspace.cesga.es/en"
+      }
+    ]
+  }
 }

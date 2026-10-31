@@ -20,6 +20,7 @@ Edit `content/profile.json`, then run `npm run build` and `npm run check`. Commi
 
 - `about`, `interests`: introduction and focus areas.
 - `research`, `projects`: research experience and portfolio.
+- `innovation`: OneHealth DataSpace project, confirmed involvement, context and public resources. The optional `contribution`, `work` and `outcomes` fields stay hidden until real content is added.
 - `publications`: scientific communications; year filters are generated from the data.
 - `education`, `courses`, `skills`, `languages`: printable CV.
 - `url`: production origin and project path, currently `https://pedro-fr.github.io/CV`.
@@ -31,8 +32,10 @@ The original CV text is retained at `docs/original-content.md` for comparison.
 
 ## Structure and behavior
 
-- About, Research, Publications and CV.
+- About, Research, Innovation, Publications and CV.
+- OneHealth DataSpace is highlighted in About and has a dedicated Innovation page. Its project context links to the official website; personal responsibilities and results are not assumed.
 - Responsive navigation; all content works without JavaScript.
+- Research visualization with subtle motion, selectable stages and a pause control. Reduced-motion preferences disable the animation.
 - Light theme by default, with a persistent light/dark toggle.
 - Local full-site search via the search button or Ctrl/⌘ K. Escape closes it.
 - Communications filtered by year.

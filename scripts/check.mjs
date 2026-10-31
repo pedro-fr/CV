@@ -3,7 +3,7 @@ import { readFile, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, resolve } from 'node:path';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
-const paths=['','research/','publications/','cv/'];
+const paths=['','research/','innovation/','publications/','cv/'];
 const origin='https://pedro-fr.github.io';
 const mount='/CV/';
 let checked=0;

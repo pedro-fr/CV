@@ -74,3 +74,33 @@ document.querySelectorAll('[data-year]').forEach(button=>button.addEventListener
 }));
 const printButton=document.querySelector('#print-cv');
 if(printButton){printButton.hidden=false;printButton.addEventListener('click',()=>window.print());}
+
+const researchVisual=document.querySelector('.research-visual');
+if(researchVisual){
+ const descriptions={
+  biology:'Biological questions, explored through omics.',
+  data:'Reproducible analysis with R, Python and HPC.',
+  understanding:'Connecting computational results with biological insights.'
+ };
+ const stages=researchVisual.querySelectorAll('[data-research-stage]');
+ const caption=document.querySelector('#research-caption');
+ stages.forEach(button=>{
+  button.disabled=false;
+  button.addEventListener('click',()=>{
+   stages.forEach(stage=>stage.setAttribute('aria-pressed',String(stage===button)));
+   caption.textContent=descriptions[button.dataset.researchStage];
+  });
+ });
+ const motionButton=document.querySelector('#research-motion');
+ const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+ let paused=false;
+ function updateResearchMotion(){
+  researchVisual.classList.toggle('is-animated',!reducedMotion.matches);
+  researchVisual.classList.toggle('is-paused',paused);
+  motionButton.hidden=reducedMotion.matches;
+  motionButton.textContent=paused?'Resume motion':'Pause motion';
+ }
+ motionButton.addEventListener('click',()=>{paused=!paused;updateResearchMotion();});
+ reducedMotion.addEventListener('change',updateResearchMotion);
+ updateResearchMotion();
+}
