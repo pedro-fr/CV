@@ -198,8 +198,8 @@ a{color:inherit}
 /* Profile and research approach */
 .hero{padding:40px 0 55px;text-align:center}
 .portrait{object-fit:cover;object-position:center 30%;border-radius:50%;padding:4px;border:1px solid var(--border);width:118px;height:118px;margin-bottom:20px}
-.hero h1{font-size:36px;font-weight:600;line-height:1.25;letter-spacing:-1.3px;margin:8px 0 12px}
-.hero-description{font-size:18px;color:var(--muted);margin:0 0 20px;letter-spacing:-.2px}
+.hero h1{font-size:36px;font-weight:600;line-height:1.25;letter-spacing:-1.3px;margin:8px 0 20px}
+
 /* Research visualization */
 .research-path{display:grid;grid-template-columns:1fr 42px 1fr 42px 1fr;align-items:start;max-width:500px;margin:34px auto 0;padding:0 12px}
 .research-node{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);font-size:13px}
@@ -214,7 +214,7 @@ a{color:inherit}
 .site-footer .footer-credits a{display:inline;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
 .site-footer .footer-links{flex-wrap:wrap;gap:16px}
 @media(max-width:760px){.hero h1{font-size:32px}}
-@media(max-width:600px){body{font-size:16px}.hero{padding:28px 0 38px}.portrait{width:104px;height:104px;margin-bottom:15px}.hero h1{font-size:30px;letter-spacing:-1.1px}.hero-description{font-size:17px}.hero>.eyebrow{font-size:11px}.research-path{grid-template-columns:1fr 22px 1fr 22px 1fr;max-width:380px;margin-top:28px;padding:0}.research-node{font-size:12px;gap:8px}.node-icon{width:38px;height:38px}.research-connector{height:38px}.site-footer .footer-links{margin-top:4px}}
+@media(max-width:600px){body{font-size:16px}.hero{padding:28px 0 38px}.portrait{width:104px;height:104px;margin-bottom:15px}.hero h1{font-size:30px;letter-spacing:-1.1px}.hero>.eyebrow{font-size:11px}.research-path{grid-template-columns:1fr 22px 1fr 22px 1fr;max-width:380px;margin-top:28px;padding:0}.research-node{font-size:12px;gap:8px}.node-icon{width:38px;height:38px}.research-connector{height:38px}.site-footer .footer-links{margin-top:4px}}
 
 .research-visual{max-width:540px;margin:0 auto}
 button.research-node{border:0;background:none;padding:0;font:inherit;font-size:13px;line-height:1.75;min-width:0}

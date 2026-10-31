@@ -24,7 +24,7 @@ Edit `content/profile.json`, then run `npm run build` and `npm run check`. Commi
 - `publications`: scientific communications; year filters are generated from the data.
 - `education`, `courses`, `skills`, `languages`: printable CV.
 - `url`: production origin and project path, currently `https://pedro-fr.github.io/CV`.
-- `email`, `github`, `linkedin`: shared contact links.
+- `email`, `github`, `linkedin`, `orcid`: shared contact links.
 
 Existing content was migrated from the original CV. Degree dates and status are preserved as originally written, including the expected MSc completion in 2025; confirm these when updating content. Communications are not presented as peer-reviewed articles, and there are no invented DOI or download links. The contact email comes from the original README.
 
@@ -57,7 +57,7 @@ The validation script checks local links/assets and anchors under `/CV/`, page m
 
 - Hosting: GitHub Pages.
 - Interface and diagram icons: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, under the MIT license. The official SVG paths are stored locally in `assets/icons/feather.json`; the full license is distributed in `assets/licenses/feather.txt` and linked from every page footer. Stroke width and rendered size are adapted to the site.
-- The biology cell and illuminated lightbulb icons, and the three-node composition, are custom SVG/CSS.
+- The biology cell and illuminated lightbulb icons, the identifier badge, and the three-node composition are custom SVG/CSS.
 - The portrait, project preview and biographical content are retained from this repository.
 - Fonts use the visitor’s system font stack; no font files or third-party webfont services are bundled.
 - The site uses custom HTML, CSS and JavaScript with no theme or runtime packages.
