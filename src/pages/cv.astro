@@ -1,0 +1,42 @@
+---
+import profile from '../../content/profile.json';
+import copy from '../../content/pages/cv.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Section from '../components/Section.astro';
+import ResearchExperience from '../components/ResearchExperience.astro';
+import Publication from '../components/Publication.astro';
+import SkillList from '../components/SkillList.astro';
+import Icon from '../components/Icon.astro';
+---
+<BaseLayout title={copy.title} currentPage="cv">
+  <PageHeading eyebrow={copy.eyebrow} heading={profile.name} description={profile.role} />
+  <div class="cv-actions">
+    <button class="button print-button" id="print-cv" hidden>{copy.printLabel} <Icon name="arrow" /></button>
+    <a class="text-link" href={`mailto:${profile.email}`}>{profile.email}</a>
+  </div>
+  <Section title={copy.sections.profile}>{profile.about.map(paragraph => <p>{paragraph}</p>)}</Section>
+  <Section title={copy.sections.innovation}>
+    <article class="innovation-record">
+      <p class="eyebrow">{profile.innovation.organization}</p>
+      <h3>{profile.innovation.title}</h3>
+      <p>{profile.innovation.involvement}</p>
+    </article>
+  </Section>
+  <Section title={copy.sections.research}><ResearchExperience /></Section>
+  <Section title={copy.sections.education}>
+    {profile.education.map(item => <article class="timeline-item">
+      <span class="date">{item.dates}</span><div><h3>{item.title}</h3><p>{item.institution}</p></div>
+    </article>)}
+  </Section>
+  <Section title={copy.sections.courses}>
+    <div class="training-list">{profile.courses.map(item => <article>
+      <span class="date">{item.year}</span><div><h3>{item.title}</h3><p>{item.institution}</p></div>
+    </article>)}</div>
+  </Section>
+  <Section title={copy.sections.publications}>
+    {profile.publications.map(publication => <Publication publication={publication} showYear />)}
+  </Section>
+  <Section title={copy.sections.skills}><SkillList items={profile.skills} /></Section>
+  <Section title={copy.sections.languages}><SkillList items={profile.languages} /></Section>
+</BaseLayout>

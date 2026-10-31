@@ -1,0 +1,19 @@
+Brand icon notices
+
+LinkedIn
+SVG source: Material Design Icons / Pictogrammers
+https://github.com/Templarian/MaterialDesign/blob/master/svg/linkedin.svg
+LinkedIn is a trademark of LinkedIn. Brand/logo icons are excluded from the
+Material Design Icons collection's general license; brand rights remain with
+their respective owners. This mark identifies a link to the site owner's profile.
+https://pictogrammers.com/docs/general/license/
+
+ORCID
+SVG source: Simple Icons
+https://github.com/simple-icons/simple-icons/blob/develop/icons/orcid.svg
+Simple Icons is distributed under CC0 1.0; the full notice is provided in
+simple-icons.txt alongside this file. The ORCID name and iD logo are trademarks
+of ORCID, Inc. This mark identifies a link to the site owner's ORCID record.
+https://orcid.org/trademark-and-id-display-guidelines
+
+Both icons are stored locally and rendered in the site's current text color.

@@ -1,0 +1,14 @@
+---
+import profile from '../../content/profile.json';
+interface Props { publication: typeof profile.publications[number]; showYear?: boolean }
+const { publication, showYear = false } = Astro.props;
+const authorParts = publication.authors.split(profile.name);
+---
+<article class="publication">
+  {showYear
+    ? <div class="record-meta"><span>{publication.year}</span><span>{publication.type}</span></div>
+    : <p class="eyebrow">{publication.type}</p>}
+  <h3>{publication.title}</h3>
+  <p class="authors">{authorParts.map((part, index) => <>{index > 0 && <strong>{profile.name}</strong>}{part}</>)}</p>
+  <p class="venue">{publication.venue}</p>
+</article>

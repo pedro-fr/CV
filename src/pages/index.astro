@@ -1,0 +1,25 @@
+---
+import profile from '../../content/profile.json';
+import copy from '../../content/pages/home.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Section from '../components/Section.astro';
+import FocusAreas from '../components/FocusAreas.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import ResearchApproach from '../components/ResearchApproach.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../utils/urls';
+---
+<BaseLayout title={copy.title} currentPage="home">
+  <section class="hero">
+    <img class="portrait" src={url('images/CV_photo.png')} alt={`Portrait of ${profile.name}`} width="120" height="120" />
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h1>{profile.name}</h1>
+    <SocialLinks />
+    <ResearchApproach />
+  </section>
+  <Section title={copy.aboutHeading}>
+    {profile.about.map(paragraph => <p>{paragraph}</p>)}
+    <a class="text-link" href={url('cv/')}>{copy.backgroundLink} <Icon name="arrow" /></a>
+  </Section>
+  <Section title={copy.focusHeading}><FocusAreas /></Section>
+</BaseLayout>

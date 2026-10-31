@@ -1,0 +1,23 @@
+---
+import profile from '../../content/profile.json';
+import copy from '../../content/pages/publications.json';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Publication from '../components/Publication.astro';
+const years = [...new Set(profile.publications.map(publication => publication.year))];
+---
+<BaseLayout title={copy.title} description={copy.description} currentPage="publications">
+  <PageHeading {...copy} />
+  <div class="publication-filters" hidden role="group" aria-label="Filter communications by year">
+    <button class="filter active" data-year="all" aria-pressed="true">{copy.allYears}</button>
+    {years.map(year => <button class="filter" data-year={year} aria-pressed="false">{year}</button>)}
+  </div>
+  {years.map(year => (
+    <section class="section-row publication-group" id={`year-${year}`} data-publication-year={year}>
+      <h2>{year}</h2>
+      <div class="section-content">
+        {profile.publications.filter(publication => publication.year === year).map(publication => <Publication publication={publication} />)}
+      </div>
+    </section>
+  ))}
+</BaseLayout>

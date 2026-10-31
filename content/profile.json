@@ -1,0 +1,149 @@
+{
+  "name": "Pedro Ferreiro Rega",
+  "shortName": "Pedro Ferreiro",
+  "role": "Biotechnology graduate & bioinformatics enthusiast",
+  "description": "Biotechnology, bioinformatics and reproducible research. Exploring biological data through computational analysis.",
+  "url": "https://pedro-fr.github.io/CV",
+  "email": "pedro.ferreirorega@gmail.com",
+  "github": "https://github.com/pedro-fr",
+  "linkedin": "https://www.linkedin.com/in/pedro-ferreirorega/",
+  "about": [
+    "I am a Biotechnology graduate with a keen interest in omics and computational algorithms applicable to biological data. My work brings together large-scale omics data analysis, visualization and quality control to connect computational results with biological insights.",
+    "With training and experience in Python, R and data visualization, I am interested in automating workflows, ensuring data reliability and contributing to scientific discoveries. I enjoy working both collaboratively and independently."
+  ],
+  "interests": [
+    "Bioinformatics",
+    "Transcriptomics",
+    "Reproducible research",
+    "Data visualization",
+    "HPC"
+  ],
+  "research": {
+    "title": "Transcriptomic analysis of Schwann cells",
+    "role": "Research Intern",
+    "lab": "Gene Regulatory Control in Disease Lab",
+    "institution": "CiMUS · Universidade de Santiago de Compostela",
+    "url": "https://cimus.usc.gal/group/genecontrol",
+    "dates": "Oct 2023 – Jul 2024",
+    "summary": "Investigating Schwann cells in diabetic neuropathy through transcriptomic analysis in R, identifying regulatory pathways and connecting findings to biological insights.",
+    "details": [
+      "Executed pipelines for quality control, statistical analysis and data visualization using FastQC, R Markdown and ggplot2.",
+      "Documented analyses to ensure reproducibility and reliability across research projects.",
+      "Used CESGA high-performance computing resources with Slurm in a Unix-like environment.",
+      "Contributed results to a bachelor’s dissertation, a congress presentation and two scientific posters."
+    ]
+  },
+  "projects": [
+    {
+      "title": "Multi-FASTA split",
+      "category": "Shell scripting",
+      "description": "A shell scripting project for working with multi-FASTA sequence files.",
+      "url": "https://github.com/pedro-fr/multi-fasta-split",
+      "image": "images/multi-fasta-split.png"
+    }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "title": "Análisis transcriptómico de las células de Schwann en la neuropatía diabética",
+      "authors": "Pedro Ferreiro Rega, Cristina Riobello Suárez, Eva María Esquinas Román, Ashwin Woodhoo",
+      "venue": "2º Simposio de Estudiantes Hispanohablantes de Bioinformática y Biología Computacional · Virtual",
+      "type": "Scientific communication"
+    },
+    {
+      "year": "2024",
+      "title": "Alternative splicing as a gene control mechanism in Schwann cell functions",
+      "authors": "Cristina Riobello Suárez, Paula Ayuso García, Sergio Velasco Avilés, Jorge Cañas Martín, Pedro Ferreiro Rega, Eva María Esquinas Román, Luis Pedro Íñiguez, Manuel Irimia, Juan Valcárcel, Marta Varela Rey, Ashwin Woodhoo",
+      "venue": "1er Congreso de la Sociedad Española de Bioinformática y Biología Computacional · Valencia",
+      "type": "Scientific communication"
+    }
+  ],
+  "education": [
+    {
+      "title": "Master’s Degree in Bioinformatics",
+      "institution": "Valencian International University · Spain",
+      "dates": "2024 – 2025 (expected)"
+    },
+    {
+      "title": "Bachelor’s Degree in Biotechnology",
+      "institution": "Universidade de Santiago de Compostela · Spain",
+      "dates": "2020 – 2024"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Advanced Data Visualizations in R",
+      "institution": "Statistical Society of Canada",
+      "year": "2025"
+    },
+    {
+      "title": "Machine Learning and Big Data for Bioinformatics",
+      "institution": "Abierta UGR",
+      "year": "2024"
+    },
+    {
+      "title": "R Programming Fundamentals",
+      "institution": "Stanford Online",
+      "year": "2023"
+    },
+    {
+      "title": "Personalised Precision Medicine",
+      "institution": "Fundación Instituto Roche",
+      "year": "2023"
+    },
+    {
+      "title": "Risk Management in Laboratory Work",
+      "institution": "Quirónprevención",
+      "year": "2023"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming",
+      "items": "Shell scripting, R, Python"
+    },
+    {
+      "title": "Data visualization",
+      "items": "ggplot2, R Markdown"
+    },
+    {
+      "title": "Tools",
+      "items": "LaTeX, MS Office, GitHub Copilot"
+    },
+    {
+      "title": "Collaboration",
+      "items": "Teamwork, communication"
+    }
+  ],
+  "languages": [
+    {
+      "title": "English",
+      "items": "Full professional · Cambridge C2, Grade A"
+    },
+    {
+      "title": "Spanish",
+      "items": "Native"
+    },
+    {
+      "title": "Galician-Portuguese",
+      "items": "Native"
+    }
+  ],
+  "innovation": {
+    "title": "OneHealth DataSpace",
+    "organization": "CESGA · Galicia Supercomputing Center",
+    "url": "https://dataspace.cesga.es/en",
+    "involvement": "I have been working on OneHealth DataSpace at CESGA for more than a year.",
+    "context": "OneHealth DataSpace is a CESGA project connecting data sharing with analytics, high-performance computing and services for publishing results. It provides a common environment for organizations to collaborate while retaining control over their data.",
+    "contribution": "",
+    "work": [],
+    "outcomes": [],
+    "resources": [
+      {
+        "label": "Official project website",
+        "url": "https://dataspace.cesga.es/en"
+      }
+    ]
+  },
+  "orcid": "https://orcid.org/0009-0005-3905-9717"
+}

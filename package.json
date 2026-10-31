@@ -1,0 +1,23 @@
+{
+  "name": "pedro-ferreiro-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "check": "astro check",
+    "preview": "astro preview",
+    "validate": "npm run check && npm run build && npm run test",
+    "test": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "astro": "7.4.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "typescript": "6.0.3"
+  }
+}

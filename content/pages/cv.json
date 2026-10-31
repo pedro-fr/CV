@@ -1,0 +1,6 @@
+{
+  "title": "CV",
+  "eyebrow": "Curriculum vitae",
+  "printLabel": "Print / save as PDF",
+  "sections": { "profile": "Profile", "innovation": "Innovation", "research": "Research", "education": "Education", "courses": "Further training", "publications": "Communications", "skills": "Skills", "languages": "Languages" }
+}

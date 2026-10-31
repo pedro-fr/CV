@@ -1,0 +1,21 @@
+---
+import profile from '../../content/profile.json';
+import { navigation, type PageKey } from '../data/navigation';
+import { url } from '../utils/urls';
+import Icon from './Icon.astro';
+interface Props { currentPage?: PageKey }
+const { currentPage } = Astro.props;
+---
+<header class="site-header">
+  <a class="brand" href={url()}>{profile.shortName}<span class="brand-dot">.</span></a>
+  <div class="header-right">
+    <nav id="navigation" aria-label="Main navigation">
+      {navigation.map(item => <a href={url(item.path)} aria-current={currentPage === item.key ? 'page' : undefined}>{item.title}</a>)}
+    </nav>
+    <div class="header-tools">
+      <button class="icon-button" id="search-open" aria-label="Search website" title="Search (Ctrl / ⌘ K)" hidden><Icon name="search" /></button>
+      <button class="icon-button" id="theme-toggle" aria-label="Change color theme" title="Change color theme" hidden><Icon name="theme" /></button>
+      <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-controls="navigation" aria-expanded="false" hidden><Icon name="menu" /></button>
+    </div>
+  </div>
+</header>
