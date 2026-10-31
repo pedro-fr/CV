@@ -1,6 +1,6 @@
 # Pedro Ferreiro Rega · personal website
 
-A personal academic website for GitHub Pages, with a custom editorial layout for research, scientific communications and professional background.
+A personal academic website for GitHub Pages, with a custom minimal layout for research, scientific communications and professional background.
 
 ## Run locally
 
