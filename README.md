@@ -48,3 +48,12 @@ This is a static site. The `.nojekyll` file disables Jekyll so the committed HTM
 Relative navigation and assets work at both `/CV/` and the domain root. For a custom domain, change `url`, regenerate and configure the domain in GitHub Pages.
 
 The validation script checks local links/assets and anchors under `/CV/`, page metadata, active navigation, search coverage and migration of CV entries. Browser verification should also cover search, filtering, mobile navigation, both themes and print preview.
+
+## Credits and third-party notices
+
+- Hosting: GitHub Pages.
+- Interface and diagram icons: [Feather](https://github.com/feathericons/feather), copyright © 2013–2023 Cole Bemis, under the MIT license. The official SVG paths are stored locally in `assets/icons/feather.json`; the full license is distributed in `assets/licenses/feather.txt` and linked from every page footer. Stroke width and rendered size are adapted to the site.
+- The biology cell icon and the three-node composition are custom SVG/CSS.
+- The portrait, project preview and biographical content are retained from this repository.
+- Fonts use the visitor’s system font stack; no font files or third-party webfont services are bundled.
+- The site uses custom HTML, CSS and JavaScript with no theme or runtime packages.
